@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url('../fonts/Mulish-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body,
+p,
+h1,
+h2,
+h3 {
+    font-family: 'Mulish', sans-serif;
+}
+
+
+#banner-lc {
+    padding: 25px;
+    background: url('../Images/P\ series\ banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 650px;
+    position: relative;
+    color: white;
+}
+
+h2.h-banner-lc {
+    font-family: 'Mulish', sans-serif;
+    font-size: 70px;
+    margin-top: 100px;
+
+}
+
+p.p-banner-lc {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    margin-top: 6rem;
+
+}
+
+button.btn.btn-primary {
+    margin-top: 50px;
+    background-color: #ffffff;
+    /* Primary blue color */
+    color: rgb(0, 0, 0);
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border: none;
+    /* No border */
+    border-radius: 30px;
+    /* Slightly rounded corners */
+    font-size: 16px;
+    /* Font size */
+    width: 150px;
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    font-family: 'Mulish', sans-serif;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    color: #ffffff;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block;
+    /* Show the modal */
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Title */
+.modal-title {
+    text-align: center;
+    color: #007bff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Group and Rows */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+/* Textarea styling */
+textarea {
+    height: 100px;
+}
+
+.modal-footer>button.btn {
+    margin-top: 50px;
+    background-color: #0F58FB;
+    /* Primary blue color */
+    color: rgb(255, 255, 255);
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border: none;
+    /* No border */
+    border-radius: 30px;
+    /* Slightly rounded corners */
+    font-size: 16px;
+    /* Font size */
+    width: 150px;
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    font-family: 'Mulish', sans-serif;
+}
+
+h3.promote-banner-lc {
+    margin-top: 5rem;
+}
+
+p.p-regular {
+    margin-top: 10px;
+    color: #999;
+    margin-bottom: 15px
+}
+
+.carousel-inner>.carousel-item>img {
+    width: 25%;
+}
+
+#lc-e {
+    background: url('../Images/LC-E.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 428px;
+    position: relative;
+}
+
+#lc-p {
+    background: url('../Images/LC-P.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#lc-oh {
+    background: url('../Images/LC-OH.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#indoor {
+    background: url('../Images/Indoor.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 525px;
+    position: relative;
+}
+
+#outdoor {
+    background: url('../Images/Outdoor.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#addition {
+    background: url('../Images/Addition.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#application {
+    background: url('../Images/Aplication.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.lc-spec {
+    margin-top: 2rem;
+}
+
+
+.param-table {
+    position: relative;
+    overflow-x: auto;
+    height: 560px;
+    overflow-y: hidden
+}
+
+
+.param-table table {
+    min-width: 100%;
+    text-align: left
+}
+
+.param-table table th {
+    padding: 15px 20px;
+    font: 700 16px/30px "Mulish";
+    color: #000;
+    background-color: #F2F4F6;
+    white-space: nowrap
+}
+
+.param-table table tbody tr {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05)
+}
+
+.param-table table tbody td {
+    padding: 15px 20px;
+    font: 300 16px/30px "Mulish";
+    white-space: nowrap
+}
+
+.param-table table tbody td:nth-of-type(1) {
+    font-weight: 700
+}
+
+.param-table.active {
+    height: auto
+}
+
+.param-more {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #0F58FB;
+    color: #0F58FB;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px
+}
+
+.param-more::before {
+    display: inline-block;
+    vertical-align: top
+}
+
+.param-more.active::before {
+    content: "\e66a"
+}
+
+@media (min-width: 1025px) {
+    .param-more:hover {
+        background-color: #0F58FB;
+        color: #fff
+    }
+}
+
+@media (max-width: 1400px) {
+    .param-table table th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px
+    }
+
+    .param-table table tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px
+    }
+}
+
+@media (max-width: 1024px) {
+    .param-table table th {
+        font-size: 14px
+    }
+
+    .param-table table tbody td {
+        font-size: 14px
+    }
+
+    .param-more {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 32px
+    }
+
+    .param-table {
+        height: 480px
+    }
+
+    .param-table.active {
+        height: auto
+    }
+}
+
+@media (max-width: 750px) {
+    .param-table table th {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px
+    }
+
+    .param-table table tbody td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px
+    }
+}
+
+/* styles.css */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+    z-index: 1000;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        opacity: 0.6;
+    }
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+
+    &--top {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+
+    &:hover {
+        color: white;
+        background: rgba(102, 177, 241, 0.8);
+        transition: all 0.5s ease;
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+
+    .et-hero-tabs,
+    .et-slide {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .et-hero-tab {
+        font-size: 1rem;
+    }
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 45%;
+}
+
+h2.h2-clog {
+    color: #0070C0;
+    /* Match the color in the image */
+}
+
+h4.h4-clog {
+    color: #0070C0;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul ul.u2-clog {
+    list-style-type: none;
+    /* Removes bullets from sublists */
+    padding-left: 20px;
+}
+
+ul ul li {
+    list-style-type: '-';
+    /* Change bullet style for sublist items */
+}
+
+li.li-clog {
+    list-style-type: none;
+    /* Remove the default list-style */
+    position: relative;
+    /* To position the ::before element */
+    padding-left: 20px;
+    /* Space for the custom marker */
+}
+
+li.li-clog::before {
+    content: '- ';
+    /* Custom marker */
+    font-weight: bold;
+    /* Make it bold */
+    position: absolute;
+    /* Position it before the list item text */
+    left: 0;
+    /* Align to the left */
+}
+
+ul>li.li-wire {
+    list-style-type: '- ';
+}
+
+#clog-banner {
+    padding: 25px;
+    background: url('../Images/clog-banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 680px;
+    position: relative;
+    color: white;
+}
+
+.banner-clog {
+    text-align: center;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.clog-name {
+    font-size: 30px;
+}
+
+.clog-price {
+    font-size: 30px;
+}
