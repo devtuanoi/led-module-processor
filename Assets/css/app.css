@@ -555,7 +555,8 @@ ul>li.li-wire {
 
 .banner-clog {
     text-align: center;
-    color: white; text-shadow: black 0.1em 0.1em 0.2em
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .clog-name {
@@ -564,4 +565,55 @@ ul>li.li-wire {
 
 .clog-price {
     font-size: 30px;
+}
+
+.container>.text-promote {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+    color: #5555aa;
+    text-align: center;
+}
+
+.container>img.cp_c {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cp_hr {
+    border: 2px solid #0070C0;
+    ;
+    border-radius: 5px;
+}
+
+h2.pre-feature {
+    color: #0070C0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+img.img-feature {
+    width: 400px;
+}
+
+.banner-pro {
+    max-width: 100%;
+    /* Make sure images fit within the column */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+/* Styling for images to fill the container */
+.img-feature,
+.img-feature2 {
+    width: 100%;
+    /* Make images take the full width of their container */
+    height: auto;
+    /* Maintain the aspect ratio */
+    max-width: 100%;
+    /* Ensure images do not exceed the container width */
+    display: block;
+    /* Remove any extra space below the image */
 }
