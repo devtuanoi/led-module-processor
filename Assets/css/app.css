@@ -405,7 +405,7 @@ a {
 }
 
 .et-hero-tabs h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
     letter-spacing: 1rem;
 }
@@ -423,10 +423,7 @@ a {
     height: 70px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #fff;
-    z-index: 10;
-    /* Sticky behavior */
-    position: -webkit-sticky;
-    position: sticky;
+    z-index: 100;
     top: 0;
 }
 
@@ -434,11 +431,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     flex: 1;
     color: #000;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
 .et-hero-tab:hover {
@@ -454,6 +452,47 @@ a {
     height: 6px;
     background: #66B1F1;
     transition: left 0.3s ease;
+}
+
+a.products-all {
+    color: #000;
+}
+
+/* Submenu styling */
+.product-menu {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    /* Adjust based on your menu height */
+    left: 0;
+    width: 100%;
+    /* Matches the width of the parent (product-menu) */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 100;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.sub-menu a {
+    padding: 10px 20px;
+    white-space: nowrap;
+    display: block;
+    color: black;
+}
+
+.sub-menu a:hover {
+    background-color: rgba(102, 177, 241, 0.8);
+    color: white;
+}
+
+/* Show submenu on hover */
+.product-menu:hover .sub-menu {
+    display: flex;
 }
 
 @media (min-width: 800px) {
@@ -537,20 +576,10 @@ ul>li.li-wire {
     list-style-type: '- ';
 }
 
-#clog-banner {
-    padding: 25px;
-    background: url('../Images/clog-banner.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 800px;
-    position: relative;
-    color: white;
-}
-
 .banner-clog {
     text-align: center;
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .clog-name {
@@ -624,10 +653,14 @@ img.img-feature {
 
 
 .vx1000-banner {
-      justify-content: center; /* Horizontal centering */
-      align-items: center;    /* Vertical centering */
-      text-align: center;     /* Text center alignment */
-      flex-direction: column; /* Ensure content is stacked vertically */
+    justify-content: center;
+    /* Horizontal centering */
+    align-items: center;
+    /* Vertical centering */
+    text-align: center;
+    /* Text center alignment */
+    flex-direction: column;
+    /* Ensure content is stacked vertically */
 }
 
 .u-vx {
@@ -661,11 +694,11 @@ li.note-vx1000 {
 
 .application-vx1000 {
     width: 100% 100%;
-    height: auto; 
+    height: auto;
     position: relative;
     color: white;
 }
 
-.price-freature{
+.price-freature {
     color: #000;
 }
